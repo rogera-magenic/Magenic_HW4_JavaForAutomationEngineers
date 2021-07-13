@@ -1,41 +1,41 @@
 TODO HOMEWORK CHECKLIST:
 PROGRAMMING TASKS:
     SongDatabase.java
-        [ ] Complete the 'addSong' method
-        [ ] Throw an IllegalArgumentException when a playlist of the given name already exists in the 'createPlaylist' method
-        [ ] Complete the 'getPlaylist' method
-        [ ] Complete the 'addSongToPlaylist' method
-        [ ] Complete the 'findSongByName' method
-        [ ] Complete the 'findSongByArtist' method
+        [X] Complete the 'addSong' method
+        [X] Throw an IllegalArgumentException when a playlist of the given name already exists in the 'createPlaylist' method
+        [X] Complete the 'getPlaylist' method
+        [X] Complete the 'addSongToPlaylist' method
+        [X] Complete the 'findSongByName' method
+        [X] Complete the 'findSongByArtist' method
     MP3Player.java
-        [ ] Run the 'main' method and try multiple work flows
+        [X] Run the 'main' method and try multiple work flows
 
 TEST TASKS:
     SongDatabaseTest.java
-        [ ] Write the 'testAddDeleteSong' test method
-        [ ] Write the 'testAddGetDeletePlaylist' test method
-        [ ] Run every other test
+        [X] Write the 'testAddDeleteSong' test method
+        [X] Write the 'testAddGetDeletePlaylist' test method
+        [X] Run every other test
 
 SHORT ANSWERS:
     // TODO FOR HOMEWORK: Answer each question, and note many don't have a 'right answer' so just answer honestly
-    [ ] The MP3Player is a console application, what features do you wish were added?
-        // ANSWER HERE:
+    [X] The MP3Player is a console application, what features do you wish were added?
+        // ANSWER HERE: Repeat One, Repeat All.
 
-    [ ] Pick any feature you mentioned in the last question. Do you think you could implement that feature with your current knowledge? If yes explain the basic thought processing of adding that feature, if not explain why.
-        // ANSWER HERE:
+    [X] Pick any feature you mentioned in the last question. Do you think you could implement that feature with your current knowledge? If yes explain the basic thought processing of adding that feature, if not explain why.
+        // ANSWER HERE: create a Case or If Else in playSong(Song song).
 
-    [ ] What is a loop?
-        // ANSWER HERE:
+    [X] What is a loop?
+        // ANSWER HERE: runs a set of functions repeatedly when some conditions become true.
 
-    [ ] Write what each of these loops does in your own words:
-        // FOR LOOP:
-        // WHILE LOOP:
-        // DO WHILE:
+    [X] Write what each of these loops does in your own words:
+        // FOR LOOP: runs a set of functions repeatedly based on a specific number of times
+        // WHILE LOOP: runs a set of functions repeatedly until the given Boolean is true.
+        // DO WHILE: runs a set of functions repeatedly based on a given Boolean is true condition after the first function is executed.
 
-    [ ] Why were 'infinite loops' used in this project? (See UserHelperMethods.displayOptionsAndWaitForValidOption(String[] options) for a reference)
-        // ANSWER HERE:
+    [X] Why were 'infinite loops' used in this project? (See UserHelperMethods.displayOptionsAndWaitForValidOption(String[] options) for a reference)
+        // ANSWER HERE: An infinite loop is used to ensure the user selects a valid option
 
-    [ ] This project has 3 packages (models, resources, and utils). Describe each one.
-        // MODELS:
-        // RESOURCES:
-        // UTILS:
+    [X] This project has 3 packages (models, resources, and utils). Describe each one.
+        // MODELS: Main package of the application which will run the program extensively.
+        // RESOURCES: Static data used for Option selection in the MP3Player UI. Which can be updated accordingly.
+        // UTILS: Helper methods that can be used all across

@@ -7,8 +7,8 @@ import java.util.List;
 
 /**
  * TODO FOR HOMEWORK - SongDatabaseTest.java
- *      [ ] Write the 'testAddDeleteSong' test method
- *      [ ] Write the 'testAddGetDeletePlaylist' test method
+ *      [X] Write the 'testAddDeleteSong' test method
+ *      [X] Write the 'testAddGetDeletePlaylist' test method
  */
 public class SongDatabaseTest {
     /**
@@ -19,6 +19,13 @@ public class SongDatabaseTest {
     public void testAddDeleteSong() {
         // TODO FOR HOMEWORK: Write a test for both adding and deleting songs from a song database
         SongDatabase database = new SongDatabase();
+        Song song = new Song("SongOne", "1");
+
+        database.addSong(song);
+        Assert.assertTrue(database.getSongArchive().contains(song));
+
+        database.deleteSong(song);
+        Assert.assertFalse(database.getSongArchive().contains(song));
     }
 
     /**
@@ -29,6 +36,13 @@ public class SongDatabaseTest {
     public void testAddGetDeletePlaylist() {
         // TODO FOR HOMEWORK: Write a test for both adding and deleting playlists from a song database
         SongDatabase database = new SongDatabase();
+        String playlistName = "PlaylistOne";
+
+        database.createPlaylist(playlistName);
+        Assert.assertTrue(database.getPlaylists().containsKey(playlistName));
+
+        database.deletePlaylist(playlistName);
+        Assert.assertFalse(database.getPlaylists().containsKey(playlistName));
     }
 
     /**
