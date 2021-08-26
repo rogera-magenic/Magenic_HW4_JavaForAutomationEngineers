@@ -119,7 +119,7 @@ public class SongDatabase {
         // Checks if the playlists already has a key for the given playlist name
         if (playlists.containsKey(playlistName)) {
             // TODO FOR HOMEWORK: Throw the IllegalArgumentException with a custom message
-            throw new IllegalArgumentException("The playlist " + playlistName + " does not exists.");
+            throw new IllegalArgumentException("The playlist " + playlistName + " exists.");
         }
         // Puts the playlist name into the playlists and maps it to a new empty list of songs
         playlists.put(playlistName, new ArrayList<Song>());
